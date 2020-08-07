@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "BaronNeue";
+  src: url(../assets/fonts/BaronNeue.otf); }
+
+@font-face {
+  font-family: "A1 Mincho";
+  src: url(../assets/fonts/A1MinchoStd-Bold.otf); }
+
+.header {
+  position: fixed;
+  z-index: 1030;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 132px; }
+  .header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 312px;
+    background-color: white; }
+  .header .menu-right {
+    z-index: 1030;
+    display: flex;
+    justify-content: flex-end; }
+    .header .menu-right .entry {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      background-color: #3a9ede; }
+      .header .menu-right .entry .text {
+        text-align: center; }
+        .header .menu-right .entry .text span {
+          display: block;
+          font-size: 2.5rem;
+          color: white;
+          line-height: 30px;
+          font-weight: bold; }
+    .header .menu-right .entry-2 {
+      background-color: #277fc4; }
+    .header .menu-right .menu-ul {
+      width: 132px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      cursor: pointer; }
+      .header .menu-right .menu-ul .span-line {
+        width: 46px;
+        height: 29px;
+        position: relative; }
+        .header .menu-right .menu-ul .span-line span {
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          height: 2px;
+          background-color: #0148c3; }
+        .header .menu-right .menu-ul .span-line span:first-of-type {
+          transform: translateY(-14px); }
+        .header .menu-right .menu-ul .span-line span:last-of-type {
+          transform: translateY(14px); }
+
+.top-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%; }
+  .top-carousel img {
+    width: 100%;
+    display: block; }
+  .top-carousel .title {
+    position: absolute;
+    top: 56%;
+    left: 9%; }
+    .top-carousel .title h2 {
+      color: white;
+      font-size: 10rem;
+      font-family: "A1 Mincho"; }
+      .top-carousel .title h2 span {
+        font-size: 3.2rem;
+        font-family: "BaronNeue";
+        display: block;
+        font-weight: normal;
+        letter-spacing: 20px; }
+  .top-carousel:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    background-color: #306cba;
+    width: 20%;
+    height: 120%; }
+
+.message .block-mess {
+  max-width: 1160px;
+  width: 100%;
+  margin: auto; }
+  .message .block-mess .recruit {
+    display: block;
+    color: #296bc1;
+    font-size: 2rem;
+    font-family: "BaronNenue";
+    margin-bottom: 20px; }
+
+.message .mess-main {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between; }
+  .message .mess-main .left {
+    width: 50%; }
+    .message .mess-main .left .title {
+      font-size: 3.2rem;
+      color: #3671c4;
+      font-weight: bold; }
+    .message .mess-main .left .text p {
+      max-width: 500px;
+      width: 100%;
+      color: #333333; }
+    .message .mess-main .left a {
+      margin-top: 60px;
+      display: block;
+      width: 254px;
+      padding: 14px 0;
+      color: white;
+      text-align: center;
+      background-image: linear-gradient(to right, #f1ce38, #98bd58); }
+  .message .mess-main .right {
+    max-width: 480px;
+    width: 50%;
+    position: relative;
+    min-height: 370px; }
+    .message .mess-main .right img {
+      position: absolute; }
+    .message .mess-main .right img:first-of-type {
+      top: 0;
+      left: 30px; }
+    .message .mess-main .right img:last-of-type {
+      bottom: 0; }
+    .message .mess-main .right img:nth-child(2) {
+      right: 0;
+      top: 65px; }

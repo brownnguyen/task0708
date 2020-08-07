@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+}
+html,
+body {
+    font-size: 62.5%;
+    font-family: "Noto Sans JP", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+}
+a:hover {
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+.container {
+    max-width: 1120px;
+    margin: auto;
+}
