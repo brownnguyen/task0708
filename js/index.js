@@ -13,12 +13,13 @@ menuUl.onclick = function () {
     }
 }
 for (let i = 0; i < newsLi.length; i++) {
+    console.log(i)
     newsLi[i].onclick = function () {
         switch (i) {
             case 1: {
+                newsContentLi[0].classList.remove('hide');
                 newsContentLi[1].classList.add('hide');
                 newsContentLi[2].classList.add('hide');
-                newsContentLi[0].classList.remove('hide');
                 newsContentLi[3].classList.remove('hide');
             }
             case 2: {

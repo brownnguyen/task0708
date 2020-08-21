@@ -200,6 +200,8 @@
     .message .mess-main .left {
       width: 50%; }
       .message .mess-main .left .title {
+        max-width: 580px;
+        width: 100%;
         font-size: 3.2rem;
         color: #3671c4;
         font-weight: bold; }
@@ -363,7 +365,7 @@
         font-size: 2rem;
         font-family: "Noto Sans JP", sans-serif; }
     .people .content-peple .left .left-content {
-      padding: 110px 126px 67px 0; }
+      padding: 15% 17% 9% 0; }
   .people .content-peple .right {
     position: relative;
     max-width: calc(50% + 320px);
@@ -482,6 +484,8 @@
       justify-content: center;
       align-items: center;
       padding: 22px 0; }
+    .recruit .content .block-bd:first-of-type {
+      margin-right: 20px; }
 
 .news {
   padding: 70px 0;
@@ -517,7 +521,8 @@
     display: flex;
     justify-content: space-between; }
     .news .content ul li {
-      list-style: none; }
+      list-style: none;
+      height: unset; }
     .news .content ul li.hide {
       height: 0;
       padding: 0; }
@@ -616,3 +621,56 @@
       color: white; }
     .footer .footer-content .block:first-of-type span:first-of-type {
       margin-right: 50px; }
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 2.5rem !important; }
+  .m-20 {
+    padding: 0 20px; }
+  .header {
+    height: 100px; }
+    .header .logo {
+      width: 250px; }
+    .header .menu-right .entry {
+      width: 150px; }
+      .header .menu-right .entry .text span {
+        font-size: 2rem; }
+    .header .menu-right .menu-ul {
+      width: 100px; }
+      .header .menu-right .menu-ul .span-line {
+        width: 35px; }
+  .top-carousel .title h2 {
+    font-size: 5rem; }
+    .top-carousel .title h2 span {
+      font-size: 2rem;
+      letter-spacing: 7px; }
+  .message .mess-main .left {
+    width: 100%; }
+    .message .mess-main .left .title {
+      margin-bottom: 20px; }
+    .message .mess-main .left .btn-a {
+      margin: 30px auto; }
+  .message .mess-main .right {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
+    min-height: unset; }
+    .message .mess-main .right img {
+      position: static;
+      height: unset; }
+  .message .block-data-content {
+    flex-wrap: wrap; }
+    .message .block-data-content .content {
+      width: 100%;
+      margin-bottom: 30px; }
+  .work .work-content {
+    flex-wrap: wrap; }
+    .work .work-content .content {
+      width: 100%; }
+      .work .work-content .content img {
+        max-width: 500px;
+        margin: auto; }
+  .people .content-people .left {
+    position: static; } }
