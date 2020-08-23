@@ -12,22 +12,26 @@ menuUl.onclick = function () {
         drawer.classList.remove('active')
     }
 }
-for (let i = 0; i < newsLi.length; i++) {
-    console.log(i)
-    newsLi[i].onclick = function () {
-        switch (i) {
-            case 1: {
-                newsContentLi[0].classList.remove('hide');
-                newsContentLi[1].classList.add('hide');
-                newsContentLi[2].classList.add('hide');
-                newsContentLi[3].classList.remove('hide');
+$('.LiList').click(function (e) { 
+    e.preventDefault();
+  
+    var _label = $(this).attr('data-list');
+    $('.LiList').removeClass('active');
+    $(this).addClass('active');
+    console.log(_label)
+    $.each($('.all'), function (indexInArray, valueOfElement) { 
+        let _this = $(this);
+        if(_label !== 'all'){
+            if(!_this.hasClass(_label)){
+                _this.slideUp('slow');
             }
-            case 2: {
-                newsContentLi[0].classList.add('hide');
-                newsContentLi[1].classList.remove('hide');
-                newsContentLi[2].classList.add('hide');
-                newsContentLi[3].classList.remove('hide');
+            else{
+                _this.slideDown('slow');
             }
         }
-    }
-}
+        else{
+            _this.slideDown('slow');
+        }
+        
+    });
+  });

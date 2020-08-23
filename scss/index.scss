@@ -690,11 +690,6 @@
         ul {
             li {
                 list-style: none;
-                height: unset;
-            }
-            li.hide {
-                height: 0;
-                padding: 0;
             }
         }
     }
@@ -726,8 +721,9 @@
         li {
             border-bottom: 1px solid $grey;
             overflow: hidden;
-            transition: all 0.5s;
+            // transition: all 0.5s;
             padding: 30px 0;
+            // height: 0;
             a {
                 color: $black;
             }
